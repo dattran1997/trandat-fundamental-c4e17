@@ -1,0 +1,18 @@
+﻿Q1:How to check a variable’s type?
+_ put variable you want to check in "type()"
+eg:
+>>> type(1)
+<class 'int'>
+>>> type("a")
+<class 'str'>
+
+Q2:In what cases, you will get SyntaxError from the compiler telling you that some of your variables have invalid names? 
+Can you give 3 different examples of invalid names?
+_we will get SyntaxError when:
++ variable's name not begin with letter
++ variable's name contain illegal character like "$" or " "
++ variable's name match with python keyword like "class"
+eg:
++ 11dat
++ dat $
++ continue
