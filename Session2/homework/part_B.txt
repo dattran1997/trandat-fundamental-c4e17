@@ -1,0 +1,24 @@
+Q1:What is Boolean? Write down 3 different expression that results a Boolean type :
+Ans:
+_Boolean is a variable only have 2 type true or false, A Boolean value is either true or false.
+eg:
+>> 5 != 6
+
+>> a = "b"
+>> a + "ye" == "bye"
+
+>> 10 == (3+7)
+
+Q3:What is nested conditionals? Write a piece of code that uses nested conditionals :
+Ans:
+_nested conditionals is a combine conditionnal, one brand of the first condition can contain other conditionals
+
+eg:
+
+if a < 1:
+    print("a < 1")
+else:
+    if a > 1:
+        print("a > 1")
+    else:
+        print("a = 1") 
