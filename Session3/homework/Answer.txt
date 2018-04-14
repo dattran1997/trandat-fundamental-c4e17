@@ -1,0 +1,11 @@
+Q1:What is nested list?
+Ans:
+_nest list is a list containt other list
+
+eg: list =["a",["b","c"]]
+
+Q2:Can a list store both integers and strings in it?
+Ans:
+_yes
+
+eg: list = ["a",3]
