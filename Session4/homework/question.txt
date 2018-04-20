@@ -1,0 +1,20 @@
+QS!1: How do we convert  a string to uppercase or lowercase?
+_ uppercase: name.toUpperCase();
+_lowercase: name.toLowerCase();
+QS2: How do we get length of a string?
+_int a = "abc"
+_we use len(a) to get length of string a
+QS3: How do we print a string, one character per line?
+_ for i in range (len(list)):
+      print(list[i])
+QS4: How do we compare two strings?
+_ if (name1.equal (name2))
+
+_int flag = name1.compareTo (name2);
+if (flag == 0) {
+System.out.println("The names are the same.");
+} else if (flag < 0) {
+System.out.println("name1 comes before name2.");
+} else if (flag > 0) {
+System.out.println("name2 comes before name1.");
+}
