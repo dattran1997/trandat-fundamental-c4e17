@@ -15,7 +15,7 @@ inventory['backpack'].remove('dagger') # xóa phân tử 'dagger' của key 'bac
 for key,value in inventory.items():
     print(key,":",value)
 
-inventory['gold'] = [500,50] #them phan tu vao list trong dictionary
+inventory['gold'] += 50
 #in ra key + value trong dictionary
 for key,value in inventory.items():
     print(key,":",value)
