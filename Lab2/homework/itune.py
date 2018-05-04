@@ -28,6 +28,7 @@ for li in li_list:
         "title":title,
         "artis":artis
     }
+
     item_list.append(item)
     print(item_list)
     print("---------------------------")

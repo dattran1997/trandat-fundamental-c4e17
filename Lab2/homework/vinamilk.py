@@ -9,8 +9,16 @@ raw_data =conn.read()
 #decode
 text = raw_data.decode('utf8')
 #clone file html cua trang web
-vinamilk_file = open("vinamilk.html","wb")
-vinamilk_file.write(raw_data)
-vinamilk_file.close()
+# vinamilk_file = open("vinamilk.html","wb")
+# vinamilk_file.write(raw_data)
+# vinamilk_file.close()
 #
-# soup = BeautifulSoup(text,"parser")
+soup = BeautifulSoup(text,"html.parser")
+table = soup.find("table",id="tableContent")
+
+row_content = table.find_all("tr")
+
+for tr in row_content:
+    title = tr.td
+    print(title)
+    print('----------------------------------')

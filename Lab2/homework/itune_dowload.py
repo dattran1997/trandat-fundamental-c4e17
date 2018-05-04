@@ -23,12 +23,14 @@ for li in li_list:
     item_list.append(title)
 #print(item_list)
 
+
 #download form youtube
 from youtube_dl import YoutubeDL
+song_num = len(item_list)
 
 option={
     'default_search':'ytsearch',
-    'max_downloads':1 #download 1 vieo trong ca list
+    'max_downloads':song_num #download 1 vieo trong ca list
 }
 
 dl = YoutubeDL(option)
