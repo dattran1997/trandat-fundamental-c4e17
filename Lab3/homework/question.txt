@@ -1,0 +1,20 @@
+Why should we use functions at all?
+- we use function to reduce the duplicate of code and to organize the program
+
+How to define/declare a function?
+->> def function'sname ():
+
+How to call/use a function?
+- function'sname ()
+What is return, why and how do we use it?
+- function use "return" to return the value we need to reuse for the next step
+
+Do we have to use return in every function?
+- No, we just use when we need to reuse value in function
+
+What are function arguments/parameters, why and how we use it?
+- we use arguments modify the value we can put in the function
+->> function'sname(value)
+How to use function from a different file other than our currently working file?
+->>  from file_contain_function import functions
+->> functions()
