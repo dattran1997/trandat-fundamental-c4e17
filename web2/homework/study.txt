@@ -1,0 +1,17 @@
+ex1:
+
+Are there any duplicate ids in the records?
+_ No
+If yes, put screenshots of the records which are so in your answer
+-...
+If no, why? Guess what information this is field represents and its implication/application
+_the id is to identify the object to the other
+
+ex2:
+
+service_search = Service.objects.with_id(("5af59cf7129995a024c3adb3")
+service_search = Service.objects.get(id='5af59cf7129995a024c3adb3')
+
+ex3:
+
+service_search = Service.objects.get(id='5af59cf7129995a024c3adb3').delete()

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>customer</title>
+  </head>
+  <body>
+    <h1>result</h1>
+    <div>
+      {% for item in customer %}
+          <p>name:{{item.name}}</p>
+          <p>gender:{{item.gender}}</p>
+          <p>email:{{item.email}}</p>
+          <p>phonenumber:{{item.phonenumber}}</p>
+          <p>job:{{item.job}}</p>
+          <p>company:{{item.company}}</p>
+          <p>contacted:{{item.contacted}}</p>
+        <hr>
+      {% endfor %}
+    </div>
+  </body>
+</html>
