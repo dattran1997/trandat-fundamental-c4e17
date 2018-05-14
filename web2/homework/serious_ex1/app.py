@@ -6,15 +6,15 @@ app = Flask(__name__)
 
 mlab.connect()
 
-@app.route('/customer')
+@app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/customer,<g>')
-def customer(g):
+@app.route('/customer')
+def customer():
     #customer ở dạng list
     customer_list = []
-    customer = Customer.objects(gender = g, contacted = False) # collection object trỏ vào dictionary tìm dictionary vs key gender =0
+    customer = Customer.objects(gender = 0, contacted = False) # collection object trỏ vào dictionary tìm dictionary vs key gender =0
     for index, item in enumerate(customer):
         if index < 10:
             customer_list.append(item)
