@@ -10,6 +10,11 @@ mlab.connect()
 def index():
     return render_template('index.html')
 
+@app.route('/all')
+def all():
+    all_customer = Customer.objects()
+    return render_template('customer.html',customer = all_customer)
+    
 @app.route('/customer')
 def customer():
     #customer ở dạng list
