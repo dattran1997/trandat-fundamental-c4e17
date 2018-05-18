@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Service</title>
+  </head>
+  <body>
+    <h1>Friend List</h1>
+    <b>
+        <a href="{{url_for('add')}}" method ='get'>thêm</a> {# thêm method vào link để hàm add trỏ tới và duyệt đkien #}
+    </b>
+    <hr>
+        {% for item in service_list%}
+          <img src={{item.image}} alt="" width="450" height="500">
+          <h2>
+            <b>
+               <p>{{item.name}}</p>
+            </b>
+          </h2>
+          <p>{{item.yob}}</p>
+          <p>{{item.height}}</p>
+          <p>
+            {{'Rảnh' if item.status == True else 'Bận'}}
+          </p>
+          <a href="{{url_for('detail',user_id = item.id)}}">chi tiết</a>
+          <hr>
+        {% endfor %}
+  </body>
+</html>
