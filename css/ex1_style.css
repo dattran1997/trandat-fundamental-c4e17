@@ -1,0 +1,24 @@
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.text-red{
+  color: red;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.text-center{
+  text-align: center;
+  padding: 150px 0;
+}
+.background{
+  opacity: 0.9;
+  height: 600px;
+  width: 100%;
+  background-image: url('http://webradio.webradiobodoga.com.br/media/album/1/1024x768.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
