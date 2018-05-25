@@ -12,8 +12,7 @@ def service():
     service_list = Service.objects() # kéo dlieu tu collection ve
     return render_template('service.html',service_list = service_list)
 
-@app.route('/detail/<user_id>', defaults={'customerid': "#", 'fullname':'#'}) # app.route là tên file chạy
-@app.route('/detail/<user_id>/<customerid>/<fullname>')
+@app.route('/detail/<user_id>/<customerid>/<fullname>') # app.route là tên file chạy
 def detail(user_id, customerid, fullname ):
     service_dict = Service.objects.with_id(user_id)
     return render_template('detail.html', item = service_dict,serviceid = user_id, customerid = customerid ,fullname = fullname)
