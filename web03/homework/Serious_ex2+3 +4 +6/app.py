@@ -58,9 +58,9 @@ def update(user_id):
                             set__phone= phone ,
                             set__gender = gender)
 
-        # return redirect({{url_for('service')}})
+        return redirect(url_for('service'))
         # return redirect({{url_for('detail',user_id = user_id)}})
-        return 'update successful'
+        # return 'update successful'
 
 if __name__ == '__main__':
   app.run( debug=True)
