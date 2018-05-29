@@ -73,18 +73,20 @@ def login():
         username = form['username']
         password = form['password']
         for item in user_list:
-            if item['username'] == username and item['password'] == password:
+            # print(item['id'])
+            if str(item['username']) == username and str(item['password']) == password:
+                print(item['id'])
+                # return 'login successful'
                 userid = item['id']
                 session[str(userid)] = True # kiểm tra nếu password vs username đúng thì tạo một key trong dictionary tượng trưng cho giấy thông hành
                 username = item['fullname']
-
                 service_list = Service.objects() #lấy dữ liệu của service truyền vào để render
-
                 # truyền dữ liệu vào html service qua render không truyền hàm đc vì ảnh hương đến route
                 return render_template('service.html',service_list = service_list, fullname = username, userid = str(userid), session = session)
             else:
                 # return"username or password incorrect"
-                return redirect(url_for('login', method = 'GET'))
+                # return redirect(url_for('login', method = 'GET'))
+                return render_template('login.html')
 
 @app.route('/logout/<userid>')
 def logout(userid):
